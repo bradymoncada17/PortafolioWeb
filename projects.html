@@ -4,19 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Proyectos | Brady Alexander</title>
-
-  <!-- Bootstrap CSS (CDN) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
-  <!-- FontAwesome (CDN) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
-  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">
@@ -34,158 +28,158 @@
     </div>
   </nav>
 
-  <!-- ===== HERO PROYECTOS ===== -->
   <header class="hero-projects d-flex align-items-center">
     <div class="container text-center">
-      <span class="section-label">Mi trabajo</span>
+      <span class="section-label">Mi trabajo en GitHub</span>
       <h1 class="hero-title mt-2">Mis <span class="accent">Proyectos</span></h1>
-      <p class="hero-desc mx-auto" style="max-width:550px;">
-        Aquí encontrarás una selección de proyectos académicos y personales
-        que he desarrollado durante mi formación en Desarrollo de Software.
+      <p class="hero-desc mx-auto" style="max-width:580px;">
+        Repositorios reales desarrollados durante mi formación en Desarrollo de Software en la
+        Institución Universitaria Pascual Bravo. Todos en C# y .NET.
       </p>
+      <a href="https://github.com/bradymoncada17" target="_blank" class="btn btn-accent mt-3">
+        <i class="fab fa-github me-2"></i> Ver todos en GitHub
+      </a>
     </div>
   </header>
 
-  <!-- ===== PROYECTOS ===== -->
   <section class="section-projects py-5">
     <div class="container">
       <div class="row g-4">
 
-        <!-- Proyecto 1 -->
+        <!-- PROYECTO 1: Figuras Geométricas -->
         <div class="col-md-6 col-lg-4">
           <div class="project-card">
-            <div class="project-icon"><i class="fas fa-table"></i></div>
-            <h5 class="project-title">Dashboard de Reportería</h5>
+            <div class="project-icon"><i class="fas fa-shapes"></i></div>
+            <h5 class="project-title">Figuras Geométricas</h5>
             <p class="project-desc">
-              Creación de informes dinámicos y automatizados usando Power Query y Excel
-              para el monitoreo de procesos operativos en contact center.
+              Aplicación Windows Forms para crear y visualizar figuras geométricas
+              (Rectángulo, Círculo, Línea, Triángulo) aplicando POO y patrón Factory.
+              Permite seleccionar color, parámetros y dibujar en un lienzo interactivo.
             </p>
             <div class="project-tags">
-              <span>Excel</span><span>Power Query</span><span>Automatización</span>
+              <span>C#</span><span>.NET</span><span>WinForms</span><span>POO</span><span>Factory</span>
             </div>
-            <button
-              class="btn btn-accent w-100 mt-3 btn-ver-video"
-              data-bs-toggle="modal"
-              data-bs-target="#modalVideo1"
-              data-video="https://www.youtube.com/embed/Vl0H-qTclOE"
-              data-titulo="Dashboard de Reportería">
-              <i class="fab fa-youtube me-2"></i> Ver Video
-            </button>
+            <div class="project-meta">
+              <span><i class="fas fa-star"></i> 1</span>
+              <span><i class="fas fa-code-branch"></i> 14 commits</span>
+            </div>
+            <a href="https://github.com/bradymoncada17/Figuras-Geom-tricas" target="_blank" class="btn btn-accent w-100 mt-3">
+              <i class="fab fa-github me-2"></i> Ver Repositorio
+            </a>
           </div>
         </div>
 
-        <!-- Proyecto 2 -->
+        <!-- PROYECTO 2: Millonario Challenge -->
         <div class="col-md-6 col-lg-4">
           <div class="project-card">
-            <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
-            <h5 class="project-title">Portafolio Web Personal</h5>
+            <div class="project-icon"><i class="fas fa-trophy"></i></div>
+            <h5 class="project-title">Trivia Millonaria</h5>
             <p class="project-desc">
-              Portafolio desarrollado con HTML, CSS, Bootstrap y jQuery como parte de
-              la asignatura Herramientas de Programación III en la Universidad Pascual Bravo.
+              Juego de trivia tipo "¿Quién quiere ser millonario?" con Windows Forms y SQL Server.
+              Incluye registro de usuarios, ranking, comodines, módulo admin protegido y
+              carga masiva de preguntas desde Excel/CSV. Patrones Factory, Singleton y Repository.
             </p>
             <div class="project-tags">
-              <span>HTML</span><span>Bootstrap</span><span>jQuery</span>
+              <span>C#</span><span>SQL Server</span><span>WinForms</span><span>ADO.NET</span>
             </div>
-            <button
-              class="btn btn-accent w-100 mt-3 btn-ver-video"
-              data-bs-toggle="modal"
-              data-bs-target="#modalVideo1"
-              data-video="https://www.youtube.com/embed/ysEN5RaKOlA"
-              data-titulo="Portafolio Web Personal">
-              <i class="fab fa-youtube me-2"></i> Ver Video
-            </button>
+            <div class="project-meta">
+              <span><i class="fas fa-star"></i> 1</span>
+              <span><i class="fas fa-code-branch"></i> 31 commits</span>
+            </div>
+            <a href="https://github.com/bradymoncada17/Millonario-Challenge" target="_blank" class="btn btn-accent w-100 mt-3">
+              <i class="fab fa-github me-2"></i> Ver Repositorio
+            </a>
           </div>
         </div>
 
-        <!-- Proyecto 3 -->
+        <!-- PROYECTO 3: CRUD -->
         <div class="col-md-6 col-lg-4">
           <div class="project-card">
             <div class="project-icon"><i class="fas fa-database"></i></div>
-            <h5 class="project-title">Sistema de Gestión de Datos</h5>
+            <h5 class="project-title">CRUD con Login</h5>
             <p class="project-desc">
-              Aplicación de escritorio para mantenimiento de registros y bases de datos
-              con C# y .NET, orientada a la gestión de operaciones administrativas.
+              Aplicación WinForms con pantalla de inicio de sesión y operaciones CRUD
+              completas conectadas a SQL Server. Incluye scripts SQL para esquema y
+              datos de ejemplo. Arquitectura en capas con ADO.NET.
             </p>
             <div class="project-tags">
-              <span>C#</span><span>.NET</span><span>Bases de datos</span>
+              <span>C#</span><span>.NET</span><span>SQL Server</span><span>WinForms</span>
             </div>
-            <button
-              class="btn btn-accent w-100 mt-3 btn-ver-video"
-              data-bs-toggle="modal"
-              data-bs-target="#modalVideo1"
-              data-video="https://www.youtube.com/embed/GfBdtaXNjr0"
-              data-titulo="Sistema de Gestión de Datos">
-              <i class="fab fa-youtube me-2"></i> Ver Video
-            </button>
+            <div class="project-meta">
+              <span><i class="fas fa-star"></i> 1</span>
+              <span><i class="fas fa-code-branch"></i> 10 commits</span>
+            </div>
+            <a href="https://github.com/bradymoncada17/CRUD" target="_blank" class="btn btn-accent w-100 mt-3">
+              <i class="fab fa-github me-2"></i> Ver Repositorio
+            </a>
           </div>
         </div>
 
-        <!-- Proyecto 4 -->
+        <!-- PROYECTO 4: MyProduct -->
         <div class="col-md-6 col-lg-4">
           <div class="project-card">
-            <div class="project-icon"><i class="fab fa-java"></i></div>
-            <h5 class="project-title">Aplicación en Java</h5>
+            <div class="project-icon"><i class="fas fa-box-open"></i></div>
+            <h5 class="project-title">MyProduct — Web Full-Stack</h5>
             <p class="project-desc">
-              Proyecto de programación orientada a objetos en Java, implementando
-              conceptos de herencia, polimorfismo y encapsulamiento.
+              Aplicación web ASP.NET Core MVC para gestión de productos y categorías con
+              CRUD completo, dropdown dinámico, inyección de dependencias, consultas
+              parametrizadas y confirmación de eliminación.
             </p>
             <div class="project-tags">
-              <span>Java</span><span>POO</span>
+              <span>C#</span><span>ASP.NET Core</span><span>SQL Server</span><span>Bootstrap</span>
             </div>
-            <button
-              class="btn btn-accent w-100 mt-3 btn-ver-video"
-              data-bs-toggle="modal"
-              data-bs-target="#modalVideo1"
-              data-video="https://www.youtube.com/embed/grEKMHGYyns"
-              data-titulo="Aplicación en Java">
-              <i class="fab fa-youtube me-2"></i> Ver Video
-            </button>
+            <div class="project-meta">
+              <span><i class="fas fa-star"></i> 1</span>
+              <span><i class="fas fa-code-branch"></i> 12 commits</span>
+            </div>
+            <a href="https://github.com/bradymoncada17/MyProduct" target="_blank" class="btn btn-accent w-100 mt-3">
+              <i class="fab fa-github me-2"></i> Ver Repositorio
+            </a>
           </div>
         </div>
 
-        <!-- Proyecto 5 -->
+        <!-- PROYECTO 5: Aplicacion Transaccional -->
         <div class="col-md-6 col-lg-4">
           <div class="project-card">
-            <div class="project-icon"><i class="fas fa-robot"></i></div>
-            <h5 class="project-title">Automatización de Procesos</h5>
+            <div class="project-icon"><i class="fas fa-spinner"></i></div>
+            <span class="project-wip-badge">🚧 En desarrollo</span>
+            <h5 class="project-title">Aplicación Transaccional</h5>
             <p class="project-desc">
-              Automatización de tareas repetitivas para optimizar el tiempo operativo
-              usando herramientas de Excel avanzado y Power Query.
+              Aplicación transaccional en C# actualmente en desarrollo. Proyecto pendiente
+              que implementará manejo de transacciones y operaciones de base de datos
+              con integridad garantizada.
             </p>
             <div class="project-tags">
-              <span>Excel</span><span>Power Query</span><span>Liderazgo</span>
+              <span>C#</span><span>.NET</span><span>Pendiente</span>
             </div>
-            <button
-              class="btn btn-accent w-100 mt-3 btn-ver-video"
-              data-bs-toggle="modal"
-              data-bs-target="#modalVideo1"
-              data-video="https://www.youtube.com/embed/9No-FiEInLA"
-              data-titulo="Automatización de Procesos">
-              <i class="fab fa-youtube me-2"></i> Ver Video
-            </button>
+            <div class="project-meta">
+              <span><i class="fas fa-clock"></i> En progreso</span>
+            </div>
+            <a href="https://github.com/bradymoncada17/Aplicacion-transaccional" target="_blank" class="btn btn-outline-secondary w-100 mt-3">
+              <i class="fab fa-github me-2"></i> Ver Repositorio
+            </a>
           </div>
         </div>
 
-        <!-- Proyecto 6 -->
+        <!-- PROYECTO 6: PortafolioWeb -->
         <div class="col-md-6 col-lg-4">
           <div class="project-card">
-            <div class="project-icon"><i class="fas fa-paint-brush"></i></div>
-            <h5 class="project-title">Diseño Web con Bootstrap</h5>
+            <div class="project-icon"><i class="fas fa-globe"></i></div>
+            <h5 class="project-title">Portafolio Web Personal</h5>
             <p class="project-desc">
-              Landing page responsiva construida con Bootstrap 5, demostrando
-              dominio del grid system, componentes y utilidades del framework.
+              Este mismo portafolio, desarrollado con HTML, CSS, Bootstrap 5 y jQuery.
+              Diseño responsive, animaciones de scroll, modales interactivos y despliegue
+              en GitHub Pages.
             </p>
             <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+              <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>jQuery</span>
             </div>
-            <button
-              class="btn btn-accent w-100 mt-3 btn-ver-video"
-              data-bs-toggle="modal"
-              data-bs-target="#modalVideo1"
-              data-video="https://www.youtube.com/embed/O_9u1822Asw"
-              data-titulo="Diseño Web con Bootstrap">
-              <i class="fab fa-youtube me-2"></i> Ver Video
-            </button>
+            <div class="project-meta">
+              <span><i class="fas fa-star"></i> GitHub Pages</span>
+            </div>
+            <a href="https://github.com/bradymoncada17/PortafolioWeb" target="_blank" class="btn btn-accent w-100 mt-3">
+              <i class="fab fa-github me-2"></i> Ver Repositorio
+            </a>
           </div>
         </div>
 
@@ -193,36 +187,14 @@
     </div>
   </section>
 
-  <!-- ===== MODAL (único, reutilizable con jQuery) ===== -->
-  <div class="modal fade" id="modalVideo1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content modal-custom">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalLabel1">Video del Proyecto</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body p-0">
-          <div class="ratio ratio-16x9">
-            <iframe id="videoFrame" src="" title="Video del proyecto" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            <i class="fas fa-times me-1"></i> Cerrar
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===== FOOTER ===== -->
   <footer class="site-footer py-5">
     <div class="container text-center">
       <p class="footer-name">Brady Alexander Moncada</p>
       <p class="footer-sub">Desarrollador de Software · Medellín, Colombia</p>
       <div class="footer-social d-flex justify-content-center gap-3 my-3">
-        <a href="https://www.linkedin.com/in/br-moncada-408133352/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/bra" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/brady-moncada-408133352/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/bradymoncadaj/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/bradymoncada17" target="_blank"><i class="fab fa-github"></i></a>
         <a href="mailto:bradymoncada17@gmail.com"><i class="fas fa-envelope"></i></a>
         <a href="tel:+573144029116"><i class="fas fa-phone"></i></a>
       </div>
@@ -230,11 +202,8 @@
     </div>
   </footer>
 
-  <!-- jQuery (CDN) -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <!-- Bootstrap JS (CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Scripts personalizados -->
   <script src="js/scripts.js"></script>
 </body>
 </html>
