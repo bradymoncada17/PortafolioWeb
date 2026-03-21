@@ -1,9 +1,28 @@
 /* FOTO DE PERFIL */
-.avatar-photo {
+.avatar-wrapper {
+  position: relative;
   width: 220px;
   height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 2px dashed var(--border);
+  animation: spin 20s linear infinite;
+  z-index: 0;
+}
+
+.avatar-photo {
+  width: 210px;
+  height: 210px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center top;
   border: 3px solid var(--accent);
   position: relative;
   z-index: 1;
