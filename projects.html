@@ -34,7 +34,7 @@
       <h1 class="hero-title mt-2">Mis <span class="accent">Proyectos</span></h1>
       <p class="hero-desc mx-auto" style="max-width:580px;">
         Repositorios reales desarrollados durante mi formación en Desarrollo de Software en la
-        Institución Universitaria Pascual Bravo. Todos en C# y .NET.
+        Institución Universitaria Pascual Bravo. Proyectos en C#, .NET y Tecnologías Web.
       </p>
       <a href="https://github.com/bradymoncada17" target="_blank" class="btn btn-accent mt-3">
         <i class="fab fa-github me-2"></i> Ver todos en GitHub
@@ -45,6 +45,69 @@
   <section class="section-projects py-5">
     <div class="container">
       <div class="row g-4">
+
+        <!-- PROYECTO: FinanzApp Pro -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <div class="project-image-container">
+              <div id="carouselFinanzApp" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselFinanzApp" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselFinanzApp" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselFinanzApp" data-bs-slide-to="2"></button>
+                  <button type="button" data-bs-target="#carouselFinanzApp" data-bs-slide-to="3"></button>
+                  <button type="button" data-bs-target="#carouselFinanzApp" data-bs-slide-to="4"></button>
+                  <button type="button" data-bs-target="#carouselFinanzApp" data-bs-slide-to="5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/projects/finanzapp/screenshot-1.png" class="d-block w-100" alt="FinanzApp Screen 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/projects/finanzapp/screenshot-2.png" class="d-block w-100" alt="FinanzApp Screen 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/projects/finanzapp/screenshot-3.png" class="d-block w-100" alt="FinanzApp Screen 3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/projects/finanzapp/screenshot-4.png" class="d-block w-100" alt="FinanzApp Screen 4">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/projects/finanzapp/screenshot-5.png" class="d-block w-100" alt="FinanzApp Screen 5">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/projects/finanzapp/screenshot-6.png" class="d-block w-100" alt="FinanzApp Screen 6">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFinanzApp" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselFinanzApp" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+              </div>
+              <button class="btn-view-gallery" data-bs-toggle="modal" data-bs-target="#galleryModal" title="Ver Galería">
+                <i class="fas fa-expand-alt"></i>
+              </button>
+            </div>
+            <h5 class="project-title">FinanzApp Pro</h5>
+            <p class="project-desc">
+              PWA offline-first para gestión financiera personal. Permite rastrear ingresos,
+              gastos, deudas y ahorros con un dashboard inteligente, cálculos de intereses
+              en tiempo real y sincronización con Firebase.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>PWA</span><span>Firebase</span><span>Bootstrap</span><span>Chart.js</span>
+            </div>
+            <div class="project-meta">
+              <span><i class="fas fa-mobile-alt"></i> PWA</span>
+              <span><i class="fas fa-database"></i> Firebase</span>
+            </div>
+            <a href="https://github.com/bradymoncada17/FinanzazAPP" target="_blank" class="btn btn-accent w-100 mt-3">
+              <i class="fab fa-github me-2"></i> Ver Repositorio
+            </a>
+          </div>
+        </div>
 
         <!-- PROYECTO 1: Figuras Geométricas -->
         <div class="col-md-6 col-lg-4">
@@ -201,6 +264,28 @@
       <p class="footer-copy">© 2025 Brady Alexander · Todos los derechos reservados</p>
     </div>
   </footer>
+
+  <!-- Modal de Galería -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content tech-modal">
+        <div class="modal-header tech-header border-0">
+          <h5 class="modal-title"><i class="fas fa-images me-2"></i> Galería de FinanzApp Pro</h5>
+          <button type="button" class="btn-close btn-close-tech" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="gallery-grid">
+            <div class="gallery-item"><img src="img/projects/finanzapp/screenshot-1.png" alt="FinanzApp Screen 1" class="img-fluid rounded"></div>
+            <div class="gallery-item"><img src="img/projects/finanzapp/screenshot-2.png" alt="FinanzApp Screen 2" class="img-fluid rounded"></div>
+            <div class="gallery-item"><img src="img/projects/finanzapp/screenshot-3.png" alt="FinanzApp Screen 3" class="img-fluid rounded"></div>
+            <div class="gallery-item"><img src="img/projects/finanzapp/screenshot-4.png" alt="FinanzApp Screen 4" class="img-fluid rounded"></div>
+            <div class="gallery-item"><img src="img/projects/finanzapp/screenshot-5.png" alt="FinanzApp Screen 5" class="img-fluid rounded"></div>
+            <div class="gallery-item"><img src="img/projects/finanzapp/screenshot-6.png" alt="FinanzApp Screen 6" class="img-fluid rounded"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

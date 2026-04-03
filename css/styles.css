@@ -716,6 +716,127 @@ body > * { position: relative; z-index: 1; }
 }
 .project-meta i { color: var(--accent); margin-right: 3px; }
 
+/* ---------- Project Gallery / Carousel ---------- */
+.project-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+  background: var(--bg-card2);
+  border: 1px solid var(--border);
+}
+
+.project-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image-container img {
+  transform: scale(1.05);
+}
+
+.carousel-item {
+  height: 200px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .carousel-control-prev,
+.project-card:hover .carousel-control-next {
+  opacity: 1;
+}
+
+.carousel-indicators {
+  margin-bottom: 0.5rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.btn-view-gallery {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(5, 11, 24, 0.6);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: var(--transition);
+}
+
+.btn-view-gallery:hover {
+  background: var(--accent);
+  color: #050b18;
+}
+
+/* Modal Gallery */
+.modal-content.tech-modal {
+  background: var(--bg-card);
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 40px rgba(0, 212, 255, 0.15);
+}
+
+.modal-header.tech-header {
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem;
+}
+
+.modal-title {
+  font-family: var(--font-mono);
+  color: var(--accent);
+}
+
+.btn-close-tech {
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gallery-item:hover {
+  border-color: var(--accent);
+  transform: scale(1.02);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--bg-card);
