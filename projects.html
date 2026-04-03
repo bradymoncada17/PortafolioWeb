@@ -46,70 +46,52 @@
     <div class="container">
       <div class="row g-4">
 
-        <!-- PROYECTO: FinanzApp Pro -->
-        <div class="col-md-6 col-lg-4">
-          <div class="project-card">
-            <div class="project-image-container">
-              <div id="carouselFinanzApp" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselFinanzApp" data-bs-slide-to="0" class="active"></button>
-                  <button type="button" data-bs-target="#carouselFinanzApp" data-bs-slide-to="1"></button>
-                  <button type="button" data-bs-target="#carouselFinanzApp" data-bs-slide-to="2"></button>
-                  <button type="button" data-bs-target="#carouselFinanzApp" data-bs-slide-to="3"></button>
-                  <button type="button" data-bs-target="#carouselFinanzApp" data-bs-slide-to="4"></button>
-                  <button type="button" data-bs-target="#carouselFinanzApp" data-bs-slide-to="5"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/projects/finanzapp/screenshot-1.png" class="d-block w-100" alt="FinanzApp Screen 1">
+        <!-- PROYECTO DESTACADO: FinanzApp Pro -->
+        <div class="col-12 mb-5">
+          <div class="project-card featured-project">
+            <span class="featured-badge fw-bold"><i class="fas fa-crown me-2 gold-crown"></i> OBRA MAESTRA 2026</span>
+            
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-5">
+                <div class="featured-content-overlay">
+                  <h3 class="project-title display-4 mb-4 text-white fw-bold">FinanzApp Pro</h3>
+                  <p class="project-desc fs-5 mb-4 text-white">
+                    PWA avanzada para gestión financiera integral. Incluye dashboard con KPIs animados (Chart.js),
+                    control de deudas con intereses, sistema de metas de ahorro, gestión de tarjetas de crédito
+                    y préstamos grupales. Soporta modo offline-first y sincronización dual con Firebase y GitHub Gist.
+                  </p>
+                  <div class="project-tags mb-5">
+                    <span>JavaScript</span><span>PWA</span><span>Firebase</span><span>Firestore</span><span>Chart.js</span>
                   </div>
-                  <div class="carousel-item">
-                    <img src="img/projects/finanzapp/screenshot-2.png" class="d-block w-100" alt="FinanzApp Screen 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/projects/finanzapp/screenshot-3.png" class="d-block w-100" alt="FinanzApp Screen 3">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/projects/finanzapp/screenshot-4.png" class="d-block w-100" alt="FinanzApp Screen 4">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/projects/finanzapp/screenshot-5.png" class="d-block w-100" alt="FinanzApp Screen 5">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/projects/finanzapp/screenshot-6.png" class="d-block w-100" alt="FinanzApp Screen 6">
+                  <div class="d-flex gap-3">
+                    <a href="https://bradymoncada17.github.io/FinanzazAPP/" target="_blank" class="btn btn-accent px-5 py-3">
+                      <i class="fas fa-rocket me-2"></i> Ejecutar Demo
+                    </a>
+                    <a href="https://github.com/bradymoncada17/FinanzazAPP" target="_blank" class="btn btn-outline-light px-4 py-3">
+                      <i class="fab fa-github"></i>
+                    </a>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFinanzApp" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselFinanzApp" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
               </div>
-              <button class="btn-view-gallery" data-bs-toggle="modal" data-bs-target="#galleryModal" title="Ver Galería">
-                <i class="fas fa-expand-alt"></i>
-              </button>
-            </div>
-            <h5 class="project-title">FinanzApp Pro</h5>
-            <p class="project-desc">
-              PWA avanzada para gestión financiera integral. Incluye dashboard con KPIs animados (Chart.js),
-              control de deudas con intereses, sistema de metas de ahorro, gestión de tarjetas de crédito
-              y préstamos grupales. Soporta modo offline-first y sincronización dual con Firebase y GitHub Gist.
-            </p>
-            <div class="project-tags">
-              <span>JavaScript</span><span>PWA</span><span>Firebase</span><span>Bootstrap</span><span>Chart.js</span>
-            </div>
-            <div class="project-meta">
-              <span><i class="fas fa-mobile-alt"></i> PWA</span>
-              <span><i class="fas fa-database"></i> Firebase</span>
-            </div>
-            <div class="d-flex gap-2 mt-3">
-              <a href="https://bradymoncada17.github.io/FinanzazAPP/" target="_blank" class="btn btn-accent flex-grow-1">
-                <i class="fas fa-rocket me-2"></i> Ver Demo
-              </a>
-              <a href="https://github.com/bradymoncada17/FinanzazAPP" target="_blank" class="btn btn-outline-light">
-                <i class="fab fa-github"></i>
-              </a>
+
+              <div class="col-lg-7">
+                <div class="browser-frame">
+                  <div class="browser-header d-flex align-items-center px-3">
+                    <div class="d-flex gap-2">
+                      <div class="browser-dot-ui" style="background: #ff5f56; opacity: 0.8;"></div>
+                      <div class="browser-dot-ui" style="background: #ffbd2e; opacity: 0.8;"></div>
+                      <div class="browser-dot-ui" style="background: #27c93f; opacity: 0.8;"></div>
+                    </div>
+                    <div class="ms-4 text-muted small" style="opacity: 0.5; font-family: var(--font-mono); font-size: 0.65rem;">finanzapp-pro.io/live-preview</div>
+                    <div class="live-indicator ms-auto py-1 px-3 border-0 bg-transparent">
+                      <span class="live-dot"></span> <small class="text-info fw-bold">ONLINE</small>
+                    </div>
+                  </div>
+                  <div class="live-preview-window" style="height: 480px;">
+                    <iframe src="https://bradymoncada17.github.io/FinanzazAPP/" style="width: 100%; height: 100%; border: none;"></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -126,10 +108,6 @@
             </p>
             <div class="project-tags">
               <span>C#</span><span>.NET</span><span>WinForms</span><span>POO</span><span>Factory</span>
-            </div>
-            <div class="project-meta">
-              <span><i class="fas fa-star"></i> 1</span>
-              <span><i class="fas fa-code-branch"></i> 14 commits</span>
             </div>
             <a href="https://github.com/bradymoncada17/Figuras-Geom-tricas" target="_blank" class="btn btn-accent w-100 mt-3">
               <i class="fab fa-github me-2"></i> Ver Repositorio
@@ -150,10 +128,6 @@
             <div class="project-tags">
               <span>C#</span><span>SQL Server</span><span>WinForms</span><span>ADO.NET</span>
             </div>
-            <div class="project-meta">
-              <span><i class="fas fa-star"></i> 1</span>
-              <span><i class="fas fa-code-branch"></i> 31 commits</span>
-            </div>
             <a href="https://github.com/bradymoncada17/Millonario-Challenge" target="_blank" class="btn btn-accent w-100 mt-3">
               <i class="fab fa-github me-2"></i> Ver Repositorio
             </a>
@@ -173,10 +147,6 @@
             <div class="project-tags">
               <span>C#</span><span>.NET</span><span>SQL Server</span><span>WinForms</span>
             </div>
-            <div class="project-meta">
-              <span><i class="fas fa-star"></i> 1</span>
-              <span><i class="fas fa-code-branch"></i> 10 commits</span>
-            </div>
             <a href="https://github.com/bradymoncada17/CRUD" target="_blank" class="btn btn-accent w-100 mt-3">
               <i class="fab fa-github me-2"></i> Ver Repositorio
             </a>
@@ -195,10 +165,6 @@
             </p>
             <div class="project-tags">
               <span>C#</span><span>ASP.NET Core</span><span>SQL Server</span><span>Bootstrap</span>
-            </div>
-            <div class="project-meta">
-              <span><i class="fas fa-star"></i> 1</span>
-              <span><i class="fas fa-code-branch"></i> 12 commits</span>
             </div>
             <a href="https://github.com/bradymoncada17/MyProduct" target="_blank" class="btn btn-accent w-100 mt-3">
               <i class="fab fa-github me-2"></i> Ver Repositorio
@@ -220,10 +186,7 @@
             <div class="project-tags">
               <span>C#</span><span>.NET</span><span>Pendiente</span>
             </div>
-            <div class="project-meta">
-              <span><i class="fas fa-clock"></i> En progreso</span>
-            </div>
-            <a href="https://github.com/bradymoncada17/Aplicacion-transaccional" target="_blank" class="btn btn-outline-secondary w-100 mt-3">
+            <a href="https://github.com/bradymoncada17/Aplicacion-transaccional" target="_blank" class="btn btn-accent w-100 mt-3">
               <i class="fab fa-github me-2"></i> Ver Repositorio
             </a>
           </div>
@@ -242,9 +205,6 @@
             <div class="project-tags">
               <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>jQuery</span>
             </div>
-            <div class="project-meta">
-              <span><i class="fas fa-star"></i> GitHub Pages</span>
-            </div>
             <a href="https://github.com/bradymoncada17/PortafolioWeb" target="_blank" class="btn btn-accent w-100 mt-3">
               <i class="fab fa-github me-2"></i> Ver Repositorio
             </a>
@@ -260,37 +220,25 @@
       <p class="footer-name">Brady Alexander Moncada</p>
       <p class="footer-sub">Desarrollador de Software · Medellín, Colombia</p>
       <div class="footer-social d-flex justify-content-center gap-3 my-3">
-        <a href="https://www.linkedin.com/in/brady-moncada-408133352/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/bradymoncadaj/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/bradymoncada17" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:bradymoncada17@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://wa.me/573144029116" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/brady-moncada-408133352/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/bradymoncadaj/" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/bradymoncada17" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:bradymoncada17@gmail.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+573144029116" title="+57 314 402 9116">
+          <i class="fas fa-phone"></i>
+        </a>
       </div>
       <p class="footer-copy">© 2025 Brady Alexander · Todos los derechos reservados</p>
     </div>
   </footer>
-
-  <!-- Modal de Galería -->
-  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content tech-modal">
-        <div class="modal-header tech-header border-0">
-          <h5 class="modal-title"><i class="fas fa-images me-2"></i> Galería de FinanzApp Pro</h5>
-          <button type="button" class="btn-close btn-close-tech" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body p-0">
-          <div class="gallery-grid">
-            <div class="gallery-item"><img src="img/projects/finanzapp/screenshot-1.png" alt="FinanzApp Screen 1" class="img-fluid rounded"></div>
-            <div class="gallery-item"><img src="img/projects/finanzapp/screenshot-2.png" alt="FinanzApp Screen 2" class="img-fluid rounded"></div>
-            <div class="gallery-item"><img src="img/projects/finanzapp/screenshot-3.png" alt="FinanzApp Screen 3" class="img-fluid rounded"></div>
-            <div class="gallery-item"><img src="img/projects/finanzapp/screenshot-4.png" alt="FinanzApp Screen 4" class="img-fluid rounded"></div>
-            <div class="gallery-item"><img src="img/projects/finanzapp/screenshot-5.png" alt="FinanzApp Screen 5" class="img-fluid rounded"></div>
-            <div class="gallery-item"><img src="img/projects/finanzapp/screenshot-6.png" alt="FinanzApp Screen 6" class="img-fluid rounded"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
